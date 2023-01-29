@@ -11,4 +11,10 @@ public class Calculadora {
     public static int sumarNumeros(int operando1, int operando2){
         return operando1+operando2;
     }
+    public static int restarNumeros(int operando1,int operando2){return operando1-operando2;}
+    public static int MultiplicarNmeros(int operando1,int operando2){return operando1*operando2;}
+    public static int DividirNumeros(int operando1,int operando2){return operando1/operando2;}
+
+
+
 }
