@@ -7,10 +7,11 @@ import java.util.Scanner;
 public class CLI {
     public static void MostrarMenu(){
         System.out.println("Selecciona una opcion");
-        System.out.println("(1)suma");
-        System.out.println("(2)resta");
-        System.out.println("(3)multiplicacion");
+        System.out.println("(1) suma");
+        System.out.println("(2) resta");
+        System.out.println("(3) multiplicacion");
         System.out.println("(4) division");
+        System.out.println("(5) rubaldo es un pendejo y joto ");
 
         Scanner scanner = new Scanner (System.in);
 
@@ -47,7 +48,11 @@ public class CLI {
 
 
 
-        }
+            }
+
+
+
+
         System.out.printf("El resultado de la operacion de %d %s %d =%d", operando1,operacion,operando2,resultado);
 
 
