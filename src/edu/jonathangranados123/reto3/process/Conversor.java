@@ -8,7 +8,7 @@ public class Conversor {
     /**
      * este metodo recibe un string que representa un numero base decimal y regresa
      * un numero en binario
-     * @param decimal numero a convertir base decimal
+     * @param decimal numero a convertir base decimal algo
      * @return numero a binario
      */
     public static  String convertirdecimalabinario() {
