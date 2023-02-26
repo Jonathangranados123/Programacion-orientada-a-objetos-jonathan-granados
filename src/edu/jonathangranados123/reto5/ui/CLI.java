@@ -3,6 +3,13 @@ package edu.jonathangranados123.reto5.ui;
 import edu.jonathangranados123.reto5.process.AdivinaLaPalabra;
 import java.util.Scanner;
 
+/**
+ * en esta clase tenemos lo que el usuario podra ver en pantalla
+ * tenemos todas las dificultades del juego y las palabras que el usuario podra
+ * adivinar
+ * @author jonathan peña
+ *  @author Arnulfo Ramos
+ */
 public class CLI {
         public static void showMenu() {
 

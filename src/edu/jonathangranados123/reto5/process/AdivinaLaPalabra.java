@@ -1,7 +1,13 @@
 package edu.jonathangranados123.reto5.process;
 
 import java.util.Scanner;
-
+/**
+   en esta clase se realizan los procesos necesarios para que
+ nuestro juego pueda tener  los intetos necesarios como para que
+ el mismo funcione de la manera que nosostros esperamos
+ @author jonathan peña
+ @author Arnulfo Ramos
+ */
 public class AdivinaLaPalabra {
     public static void jugar(String palabra) {
         Scanner sc = new Scanner(System.in);
