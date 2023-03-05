@@ -1,15 +1,16 @@
-package edu.jonathangranados123.reto5.process;
+package edu.jonathangranados123.reto6.process;
 
 import java.util.Scanner;
 /**
-   en esta clase se realizan los procesos necesarios para que
+ en esta clase se realizan los procesos necesarios para que
  nuestro juego pueda tener  los intetos necesarios como para que
  el mismo funcione de la manera que nosostros esperamos
  @author jonathan peña
  @author Arnulfo Ramos
  */
-public class AdivinaLaPalabra {
 
+public class AdivinaLaPalabra {
+    public static String letra="";
     public static void jugar(String palabra) {
         Scanner sc = new Scanner(System.in);
         int intentos = 5;
@@ -21,7 +22,11 @@ public class AdivinaLaPalabra {
             System.out.println("La palabra a adivinar es: " + palabraAdivinada);
             System.out.println("Te quedan " + intentos + " intentos");
             System.out.println("Ingrese una letra: ");
-            String letra = sc.nextLine().toLowerCase();
+            letra = sc.nextLine().toLowerCase();
+            if (letra.equals("0")){
+                return;
+
+            }
 
 
             boolean acerto = false;
@@ -39,7 +44,7 @@ public class AdivinaLaPalabra {
                 intentos--;
             }
         }
-         if (palabraAdivinada.equals(palabra)) {
+        if (palabraAdivinada.equals(palabra)) {
             System.out.println("¡Felicitaciones! Adivinaste la palabra " + palabra);
         } else {
             System.out.println("¡Lo siento! No adivinaste la palabra " + palabra);
@@ -50,4 +55,6 @@ public class AdivinaLaPalabra {
 
     }
 }
+
+
 
