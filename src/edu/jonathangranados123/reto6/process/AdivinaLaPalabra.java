@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class AdivinaLaPalabra {
     public static String letra="";
     public static void jugar(String palabra) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int intentos = 5;
         String palabraAdivinada = "";
         for (int i = 0; i < palabra.length(); i++) {
@@ -22,11 +22,21 @@ public class AdivinaLaPalabra {
             System.out.println("La palabra a adivinar es: " + palabraAdivinada);
             System.out.println("Te quedan " + intentos + " intentos");
             System.out.println("Ingrese una letra: ");
-            letra = sc.nextLine().toLowerCase();
+            letra = scanner.nextLine().toLowerCase();
             if (letra.equals("0")){
                 return;
-
-            }
+                try {
+                    letra = scanner.nextLine().toLowerCase();
+                    if (letra.equals("0")) {
+                        return;
+                    }
+                    if (letra.length() != 1 || !Character.isLetter(letra.charAt(0))) {
+                        throw new IllegalArgumentException();
+                    }
+                } catch (IllegalArgumentException exception) {
+                    System.out.println("Favor de ingresar una letra válida");
+                    continue;
+                }
 
 
             boolean acerto = false;
