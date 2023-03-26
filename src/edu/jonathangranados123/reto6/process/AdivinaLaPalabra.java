@@ -10,7 +10,8 @@ import java.util.Scanner;
  */
 
 public class AdivinaLaPalabra {
-    public static String letra="";
+    public static String letra = "";
+
     public static void jugar(String palabra) {
         Scanner scanner = new Scanner(System.in);
         int intentos = 5;
@@ -23,10 +24,9 @@ public class AdivinaLaPalabra {
             System.out.println("Te quedan " + intentos + " intentos");
             System.out.println("Ingrese una letra: ");
             letra = scanner.nextLine().toLowerCase();
-            if (letra.equals("0")){
-                return;
+
                 try {
-                    letra = scanner.nextLine().toLowerCase();
+                    letra =scanner.nextLine().toLowerCase();
                     if (letra.equals("0")) {
                         return;
                     }
@@ -39,32 +39,31 @@ public class AdivinaLaPalabra {
                 }
 
 
-            boolean acerto = false;
-            for (int i = 0; i < palabra.length(); i++) {
-                if (palabra.charAt(i) == letra.charAt(0)) {
-                    palabraAdivinada = palabraAdivinada.substring(0, i) + letra + palabraAdivinada.substring(i + 1);
-                    acerto = true;
+                boolean acerto = false;
+                for (int i = 0; i < palabra.length(); i++) {
+                    if (palabra.charAt(i) == letra.charAt(0)) {
+                        palabraAdivinada = palabraAdivinada.substring(0, i) + letra + palabraAdivinada.substring(i + 1);
+                        acerto = true;
 
+                    }
+                }
+                if (acerto) {
+
+                } else {
+                    System.out.println("Inténtalo de nuevo");
+                    intentos--;
                 }
             }
-            if (acerto) {
-
+            if (palabraAdivinada.equals(palabra)) {
+                System.out.println("¡Felicitaciones! Adivinaste la palabra " + palabra);
             } else {
-                System.out.println("Inténtalo de nuevo");
-                intentos--;
+                System.out.println("¡Lo siento! No adivinaste la palabra " + palabra);
+
             }
-        }
-        if (palabraAdivinada.equals(palabra)) {
-            System.out.println("¡Felicitaciones! Adivinaste la palabra " + palabra);
-        } else {
-            System.out.println("¡Lo siento! No adivinaste la palabra " + palabra);
+
 
         }
-
-
-
     }
-}
 
 
 
