@@ -2,6 +2,18 @@ package edu.jonathangranados123.reto9.process;
 import java.util.Random;
 
 
+/**
+
+ Esta clase representa a un conjunto de ayudantes que pueden ser creados y descritos mediante sus características.
+
+ Cada ayudante tiene un número de ojos, color de piel, altura y niveles de habilidad para destruir, crear y arreglar cosas.
+ La clase tiene un constructor que toma como parámetros todas las variables de instancia mencionadas
+ anteriormente, y las inicializa con los valores correspondientes.
+
+ En resumen, esta clase sirve para crear y describir un conjunto de ayudantes con diferentes
+ características, utilizando valores aleatorios generados por la clase Random.
+
+ */
 
 public class Ayudantes {
     public int numeroDeOjos;
