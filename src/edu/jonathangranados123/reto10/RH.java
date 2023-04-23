@@ -4,6 +4,13 @@ package edu.jonathangranados123.reto10;
  * de empleados y también implementa la interfaz {@link Entrivistador}.
  */
 public class RH extends empleados implements Entrivistador {
+    public RH(String nombre, int edad) {
+        super(nombre, edad);
+    }
+
+    public RH() {
+    }
+
     /**
      * Método que permite al empleado de RH realizar una entrevista, en este caso, preguntando sobre
      * el background del entrevistado. Esta implementación cumple con el contrato de la interfaz
@@ -12,5 +19,10 @@ public class RH extends empleados implements Entrivistador {
     @Override
     public void entrevistar() {
         System.out.println("preguntar el background");
+    }
+
+    @Override
+    public int compareTo(empleados o) {
+        return 0;
     }
 }

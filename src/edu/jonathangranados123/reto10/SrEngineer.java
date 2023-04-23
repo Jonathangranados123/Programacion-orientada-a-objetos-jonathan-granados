@@ -8,6 +8,13 @@ package edu.jonathangranados123.reto10;
 public class SrEngineer extends JrEngineer implements Entrivistador {
 
 
+    public SrEngineer(String name, int i) {
+        super(name, i);
+    }
+
+    public SrEngineer() {
+    }
+
     /**
 
      Anula el método progrmar de la interfaz del programador e imprime un mensaje en la consola.
