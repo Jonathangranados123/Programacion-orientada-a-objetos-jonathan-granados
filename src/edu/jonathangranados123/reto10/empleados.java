@@ -11,6 +11,15 @@ public abstract class empleados implements Comparable<empleados> {
      *
      */
     String nombre;
+String RFC;
+    @Override
+    public String toString() {
+        return "JrEngenineer;" +
+                "nombre;" + nombre + '\'' +
+                ", edad;" + edad +
+                '}';
+    }
+
 
     public String getNombre() {
         return nombre;

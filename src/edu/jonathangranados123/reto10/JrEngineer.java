@@ -7,7 +7,60 @@ public class JrEngineer extends empleados implements programer {
     public JrEngineer(String name, int i) {
         super(name, i);
     }
-String RFC;
+protected String RFC;
+    @Override
+    public String toString() {
+        return "JrEngineer;" +
+                 nombre +
+                ";" + edad +";"+RFC
+                ;
+    }
+    public JrEngineer(String RFC) {
+        this.RFC = RFC;
+    }
+
+    public JrEngineer(String nombre, int edad, String RFC) {
+        super(nombre, edad);
+        this.RFC = RFC;
+    }
+
+
+
+    @Override
+    public String getNombre() {
+        return super.getNombre();
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        super.setNombre(nombre);
+    }
+
+    @Override
+    public int getEdad() {
+        return super.getEdad();
+    }
+
+    @Override
+    public void setEdad(int edad) {
+        super.setEdad(edad);
+    }
+
+    @Override
+    public void traabajar() {
+        super.traabajar();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
     public JrEngineer() {
         super();
         this.RFC= RFC;
